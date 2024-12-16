@@ -36,21 +36,49 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+```
+1. Type the program in Quartus software.
+2. Compile and run the program.
+3. Generate the RTL schematic and save the logic diagram.
+4. Create nodes for inputs and outputs to generate the timing diagram.
+5. For different input combinations generate the timing diagram.
+
+```
+**TRUTH TABLE**
+
+![DE25](https://github.com/user-attachments/assets/edf9ddcf-bb10-4266-a6cd-a730db541017)
+
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+```
+ module exp5(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+ input y0,y1,y2,y3,y4,y5,y6,y7;
+ output a,b,c;
+ assign a= ( y4 | y5 | y6 | y7);
+ assign b= ( y2 | y3 | y6 | y7);
+ assign c= ( y1 | y3 | y5 | y7);
+```
+
+Developed by: SHAABIN R S RegisterNumber: 24006663
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![DE26](https://github.com/user-attachments/assets/adf1f3d3-7839-4d9f-ac83-f4f0b236b21a)
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![DE27](https://github.com/user-attachments/assets/7104b4b0-21fe-4b8f-b274-1c0049f68a83)
+
 
 **RESULTS**
 
+ Thus the given half adder and half subtractor fuctions are implemented and their
+ operators are verified using Verilog programming.
 
 
 
